@@ -1,0 +1,44 @@
+.container {
+  margin: 40px 80px;
+
+  .header {
+    text-align: right;
+
+    .login-button-box {
+      padding: 10px;
+      margin: 20px 0;
+      .login-button {
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 1px solid #1E2A5E;
+        background-color: #fff;
+        color: #1E2A5E;
+        border-radius: 8px;
+
+        &:hover {
+          font-size: 17px;
+          background-color: #7C93C3;
+          color: #fff;
+          border: 1px solid #7C93C3;
+
+        }
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    app-nav-bar {
+      margin-right: 40px;
+      flex: 1;
+    }
+
+    app-recommand {
+      flex: 6;
+    }
+  }
+
+}
