@@ -1,7 +1,19 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  border: 1px solid #e1d7b7;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #e1d7b7;
+
   .select-box {
+    &:hover {
+      border-bottom: 3px solid #1e2a5e;
+      font-size: 17px;
+    }
 
     .like-book {
 
@@ -17,6 +29,12 @@
 
     .my-page {
 
+    }
+
+    .category-select {
+      font-weight: bold;
+      color: #5d5d5d;
+      margin-bottom: 1px;
     }
   }
 }
