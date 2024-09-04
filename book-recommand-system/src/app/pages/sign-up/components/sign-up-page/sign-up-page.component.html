@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="header">
+    <h2>회원가입</h2>
+  </div>
+
+  <div class="content">
+    <div class="id-box tab-list">
+      <label>
+        <span>아이디</span>
+        <div class="input-group">
+          <input type="text" placeholder="아이디 입력">
+          <button (click)="confirmId()">아이디 인증</button>
+        </div>
+      </label>
+    </div>
+
+    <div class="password-box tab-list">
+      <label>
+        <span>비밀번호</span>
+        <div class="input-group">
+          <input type="password" placeholder="비밀번호 입력">
+          <button (click)="confirmPassword()">비밀번호 인증</button>
+        </div>
+      </label>
+    </div>
+
+    <div class="name-box tab-list">
+      <label>
+        <span>이름</span>
+        <div class="input-group">
+          <input type="text" placeholder="이름 입력">
+        </div>
+      </label>
+    </div>
+
+    <div class="name-box tab-list">
+      <label>
+        <span>닉네임</span>
+        <div class="input-group">
+          <input type="text" placeholder="닉네임 입력">
+        </div>
+      </label>
+    </div>
+
+    <div class="birthday-box tab-list">
+      <label>
+        <span>생년월일</span>
+        <input type="date" formControlName="birthday">
+      </label>
+    </div>
+
+    <div class="gender-box tab-list">
+      <span>성별</span>
+      <div class="gender-options">
+        <label class="gender-button" [class.selected]="formGroup.get('gender')?.value === 'male'">
+          <input type="radio" name="gender" value="male" id="male" (change)="onGenderChange('male')">
+          <span>남</span>
+        </label>
+        <label class="gender-button" [class.selected]="formGroup.get('gender')?.value === 'female'">
+          <input type="radio" name="gender" value="female" id="female" (change)="onGenderChange('female')">
+          <span>여</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="success-button-box">
+      <button routerLink="/sign-in">회원가입</button>
+    </div>
+  </div>
+</div>

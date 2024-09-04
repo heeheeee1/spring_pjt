@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class LoginPageComponent {
 
+  a() {
+    console.log('a');
+  }
+
+  b() {
+    console.log('b');
+  }
 }

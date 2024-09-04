@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
-
+import { SignUpModule } from '../sign-up/sign-up.module';
 const routes: Routes = [
   { path: '', component: MainPageComponent },
   {
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('../search/search.module').then(m => m.SearchModule)
+  },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('../sign-up/sign-up.module').then(m => m.SignUpModule)
   }
 ];
 
