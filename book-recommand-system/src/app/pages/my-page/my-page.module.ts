@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MyPageRoutingModule } from './my-page-routing.module';
 import { MyPageComponent } from './components/my-page/my-page.component';
+import { NavBarModule } from 'src/app/modules/nav-bar/nav-bar.module';
 
 
 
@@ -11,7 +12,8 @@ import { MyPageComponent } from './components/my-page/my-page.component';
   ],
   imports: [
     CommonModule,
-    MyPageRoutingModule
+    MyPageRoutingModule,
+    NavBarModule
   ]
 })
 export class MyPageModule { }

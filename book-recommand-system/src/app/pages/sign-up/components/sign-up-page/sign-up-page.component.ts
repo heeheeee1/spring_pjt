@@ -7,11 +7,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./sign-up-page.component.scss']
 })
 export class SignUpPageComponent implements OnInit {
-  formGroup: FormGroup;
+  // formGroup: FormGroup;
   selectedGender: string = '';
 
-  constructor(private fb: FormBuilder) {
-    this.formGroup = this.createForm();
+  formGroup: FormGroup = this.createForm();
+  constructor(
+    private fb: FormBuilder
+  ) {
   }
 
   ngOnInit(): void {
@@ -28,6 +30,10 @@ export class SignUpPageComponent implements OnInit {
   }
 
   confirmPassword() {
+
+  }
+
+  submit() {
 
   }
 

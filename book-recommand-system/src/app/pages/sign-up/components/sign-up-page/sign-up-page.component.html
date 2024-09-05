@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [formGroup]="formGroup">
   <div class="header">
     <h2>회원가입</h2>
   </div>
@@ -66,7 +66,7 @@
 
   <div class="footer">
     <div class="success-button-box">
-      <button routerLink="/sign-in">회원가입</button>
+      <button (click)="submit()">회원가입</button>
     </div>
   </div>
 </div>

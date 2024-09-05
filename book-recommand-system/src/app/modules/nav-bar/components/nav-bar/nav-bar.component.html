@@ -1,17 +1,17 @@
 <div class="container">
-  <div class="select-box" routerLink="/like-books">
+  <div class="select-box" routerLink="/like-books" (click)="activeIndex(0)">
     <p class="like-book category-select">관심 독서</p>
   </div>
 
-  <div class="select-box" routerLink="/search">
+  <div class="select-box" routerLink="/search" (click)="activeIndex(1)">
     <p class="search-book category-select">도서검색</p>
   </div>
 
-  <div class="select-box" routerLink="/community">
+  <div class="select-box" routerLink="/community" (click)="activeIndex(2)">
     <p class="community category-select">게시판</p>
   </div>
 
-  <div class="select-box" routerLink="/my-page">
+  <div class="select-box" routerLink="/my-page" (click)="activeIndex(3)">
     <p class="my-page category-select">마이페이지</p>
   </div>
 </div>
