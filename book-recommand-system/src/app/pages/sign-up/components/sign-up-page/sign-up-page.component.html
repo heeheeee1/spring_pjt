@@ -8,7 +8,7 @@
       <label>
         <span>아이디</span>
         <div class="input-group">
-          <input type="text" placeholder="아이디 입력">
+          <input type="text" placeholder="아이디 입력" formControlName="id">
           <button (click)="confirmId()">아이디 인증</button>
         </div>
       </label>
@@ -18,7 +18,7 @@
       <label>
         <span>비밀번호</span>
         <div class="input-group">
-          <input type="password" placeholder="비밀번호 입력">
+          <input type="password" placeholder="비밀번호 입력" formControlName="password">
           <button (click)="confirmPassword()">비밀번호 인증</button>
         </div>
       </label>
@@ -28,7 +28,7 @@
       <label>
         <span>이름</span>
         <div class="input-group">
-          <input type="text" placeholder="이름 입력">
+          <input type="text" placeholder="이름 입력" formControlName="name">
         </div>
       </label>
     </div>
@@ -37,7 +37,7 @@
       <label>
         <span>닉네임</span>
         <div class="input-group">
-          <input type="text" placeholder="닉네임 입력">
+          <input type="text" placeholder="닉네임 입력" formControlName="nickname">
         </div>
       </label>
     </div>
@@ -45,7 +45,7 @@
     <div class="birthday-box tab-list">
       <label>
         <span>생년월일</span>
-        <input type="date" formControlName="birthday">
+        <input type="date" formControlName="birthday" formControlName="birthday">
       </label>
     </div>
 
